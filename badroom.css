@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(badroom.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section_text h2 a{
+    color: #fff;
+    text-align: center;
+}
+.section_text p a{
+    text-align: justify;
+    color: #fff;
+    margin: auto 2.5em;
+    line-height: 1.9em;
+}
+.samples{
+    font-family: Verdana;
+    color: #fff;
+    flex-direction: column;
+    text-align: center;
+    background: transparent;
+}
+.featured{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 5%;
+    margin: 20px auto;
+}
+.work{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.work figure figcaption{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.work figure figcaption a{
+    font-family: Verdana;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.work figure figcaption::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.work figure figcaption:hover::after{
+    width: 100%;
+}
